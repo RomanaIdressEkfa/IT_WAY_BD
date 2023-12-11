@@ -6,6 +6,7 @@ use App\Models\Employees;
 use App\Models\Skills;
 use Exception;
 use Illuminate\Http\Request;
+use File;
 
 class SkillsController extends Controller
 {

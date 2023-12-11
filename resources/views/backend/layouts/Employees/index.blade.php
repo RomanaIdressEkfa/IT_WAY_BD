@@ -58,7 +58,7 @@
             <td>
                 <img style="width:120px;" src="{{asset('images/employees/'.$employee->image)}}" alt="">
             </td>
-            <td>{{$employee->address}}</td>
+            <td style="max-width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{{$employee->address}}</td>
             <td>
                 <a href="{{route('employee_details_view',$employee->id)}}" class="btn btn-info btn-sm text-white">View</a>
                 <a href="{{route('employee_details_edit',$employee->id)}}" class="btn btn-primary btn-sm text-white">Edit</a>

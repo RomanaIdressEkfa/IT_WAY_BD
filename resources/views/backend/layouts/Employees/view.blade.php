@@ -5,7 +5,6 @@
         <a class="btn btn-primary btn-sm mt-2 mb-4 float-left bi bi-wallet2" href="{{ route("employee_details_index") }}">
             All Employee List
         </a>
-        <a target="_blank" class="btn btn-primary btn-sm mt-2 mb-2 ml-2 float-end bi bi-file-earmark-pdf-fill" href="{{ route("employees_details_pdf", $employee->id) }}">Export PDF</a>
         <div>
             <h6 class="text-gray-500 mb-5 mt-3" style='font-weight:bold'>VIEW EMPLOYEE</h6>
 

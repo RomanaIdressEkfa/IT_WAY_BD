@@ -1,4 +1,4 @@
-@extends("backend.layouts.master")
+@extends("backend.master")
 @section("content_page")
     <!DOCTYPE html>
     <html lang="en">
@@ -8,13 +8,13 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rGObF6jz9ATKxIep9tiCxS/Z9fNfexbBH8qO2ms2hJSg9uBoFv06C6uKfr5ccFQ8"
                 crossorigin="anonymous">
-            <title>Edit Employee</title>
+            <title>Edit Skill</title>
         </head>
 
         <body>
 
             <div class="container border border-light shadow mt-2 rounded p-4">
-                <h3 class=" text-primary mb-4 text-center" style='font-weight:bold'>EDIT EMPLOYEE</h3>
+                <h3 class=" text-primary mb-4 text-center" style='font-weight:bold'>EDIT SKILL</h3>
 
                 <form action="{{ route("skill_details_update", $skill->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf

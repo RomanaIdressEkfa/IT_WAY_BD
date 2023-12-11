@@ -51,7 +51,6 @@
             <td>{{++$sl}}</td>
             <td>{{$skill->skill}}</td>
             <td>
-                <a href="{{route('skill_details_view',$skill->id)}}" class="btn btn-info btn-sm text-white">View</a>
                 <a href="{{route('skill_details_edit',$skill->id)}}" class="btn btn-primary btn-sm text-white">Edit</a>
                 <a href="{{route('skill_details_delete',$skill->id)}}" onclick="return confirm('Are you sure to delete?')" class="btn btn-danger btn-sm text-white">Delete</a>
 

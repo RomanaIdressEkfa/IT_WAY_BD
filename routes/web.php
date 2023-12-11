@@ -27,7 +27,6 @@ Route::get('/',[BackendController::class,'admin'] )->name('admin');
 Route::get('/skill_details_index', [SkillsController::class, 'index'])->name('skill_details_index');
 Route::get('/skill_details_create', [SkillsController::class, 'create'])->name('skill_details_create');
 Route::post('/skill_details_store', [SkillsController::class, 'store'])->name('skill_details_store');
-Route::get('/skill_details_view/{id}', [SkillsController::class, 'view'])->name('skill_details_view');
 Route::get('/skill_details_edit/{id}', [SkillsController::class, 'edit'])->name('skill_details_edit');
 Route::post('/skill_details_update/{id}', [SkillsController::class, 'update'])->name('skill_details_update');
 Route::get('/skill_details_delete/{id}', [SkillsController::class, 'delete'])->name('skill_details_delete');
@@ -42,6 +41,7 @@ Route::get('/employee_details_edit/{id}', [EmployeesController::class, 'edit'])-
 Route::post('/employee_details_update/{id}', [EmployeesController::class, 'update'])->name('employee_details_update');
 Route::get('/employee_details_delete/{id}', [EmployeesController::class, 'delete'])->name('employee_details_delete');
 //employee_details end
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

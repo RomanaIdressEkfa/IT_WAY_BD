@@ -46,65 +46,7 @@
                                 @endif
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="position" class="form-label">Position</label>
-                                <input type="text" value="{{ $employee->position }}" class="form-control" id="position" name="position" placeholder="Enter your position">
-                                @if ($errors->has("position"))
-                                    <p class="text-danger">{{ $errors->first("position") }}</p>
-                                @endif
 
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="department" class="form-label">Department</label>
-                                <input type="text" value="{{ $employee->department }}" class="form-control" id="department" name="department" placeholder="Enter your department">
-                                @if ($errors->has("department"))
-                                    <p class="text-danger">{{ $errors->first("department") }}</p>
-                                @endif
-
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="date_of_birth" class="form-label">Date of Birth</label>
-                                <input type="date" class="form-control" value="{{ $employee->date_of_birth }}" id="date_of_birth" name="date_of_birth" placeholder="Enter your date of birth">
-                                @if ($errors->has("date_of_birth"))
-                                    <p class="text-danger">{{ $errors->first("date_of_birth") }}</p>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="hire_date" class="form-label">Hire Date</label>
-                                <input type="date" value="{{ $employee->hire_date }}" class="form-control" id="hire_date" name="hire_date" placeholder="Enter your hire date">
-                                @if ($errors->has("hire_date"))
-                                    <p class="text-danger">{{ $errors->first("hire_date") }}</p>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="nid" class="form-label">NID Number</label>
-                                <input type="number" value="{{ $employee->nid_no }}" class="form-control" id="nid" name="nid_no" placeholder="Enter your NID number">
-                                @if ($errors->has("nid_no"))
-                                    <p class="text-danger">{{ $errors->first("nid_no") }}</p>
-                                @endif
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="salary" class="form-label ">Salary</label>
-                                <input type="number" value="{{ $employee->salary }}" class="form-control" id="salary" name="salary" placeholder="Enter your salary">
-                                @if ($errors->has("salary"))
-                                    <p class="text-danger">{{ $errors->first("salary") }}</p>
-                                @endif
-                            </div>
-                        </div>
                         <div class="col-md-6">
                             <div class="mb-3">
                                 <label for="image" class="form-label ">Image:</label>

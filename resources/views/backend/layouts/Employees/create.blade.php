@@ -18,16 +18,6 @@
                 <form action="{{ route("employee_details_store") }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
-                        {{-- <div class="col-md-6">
-                            <div class="mb-3">
-                                <select class="form-select" aria-label="Default select example" name="skill_id">
-                                    <option selected>Skill ID:</option>
-                                   @foreach ($skills as $skill)
-                                        <option value="{{$skill->id }}">{{ $skill->skill }}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div> --}}
                         <div class="col-md-6">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name</label>
@@ -83,21 +73,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        {{-- <div class="form-group">
-                            <label for="employeeSkills">Skills:</label>
-                            <div class="checkbox-group">
-                                @foreach($skills as $skill)
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="skills[]" value="{{ $skill->id }}" id="skill{{ $skill->id }}">
-                                        <label class="form-check-label" for="skill{{ $skill->id }}">
-                                            {{ $skill->skill }}
-                                        </label>
-                                    </div>
-                                @endforeach
-                            </div>
-                        </div> --}}
-
                     </div>
                     <button type="submit" class="btn btn-primary mb-3 ">Submit</button>
             </div>
@@ -108,7 +83,6 @@
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-e5STZUs8i4MKQE6P/wxBXzquZq1TsLFtrGBsH75qbyIbbV9EP5C7nyFOy2u7b3jF" crossorigin="anonymous">
             </script>
         </body>
-
     </html>
 
     <script>

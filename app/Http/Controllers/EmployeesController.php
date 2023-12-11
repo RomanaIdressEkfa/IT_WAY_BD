@@ -9,6 +9,7 @@ use App\Models\Employees;
 use App\Models\Skills;
 use Exception;
 use Illuminate\Http\Request;
+use File;
 
 class EmployeesController extends Controller
 {
@@ -53,36 +54,6 @@ class EmployeesController extends Controller
             toastr()->error('Something went wrong!', 'Alert');
         }
     }
-    // public function store(Request $request)
-    // {
-    //     // dd($request->all());
-    //     $validatedData = $request->validate([
-    //         'name' => 'required',
-    //         'email' => 'required|email',
-    //         'phone_number' => 'nullable',
-    //         'address' => 'nullable|string',
-    //         'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-    //         'skills' => 'nullable|array', // assuming skills are passed as an array
-    //     ]);
-
-    //     // Handle image upload if provided
-    //     if ($request->hasFile('image')) {
-    //         $imagePath = $request->file('image')->store('images', 'public');
-    //         $validatedData['image'] = $imagePath;
-    //     }
-
-    //     // Create the employee
-    //     $employee = Employees::create($request->all());
-    //     // dd($employee);
-
-    //     // Attach skills to the employee
-    //     if ($request->filled('skills')) {
-    //         $employee->skills()->attach($request->input('skills'));
-    //     }
-
-    //     return redirect()->back()->with('success', 'Employee details added successfully');
-    // }
-
 
     public function edit($id)
     {

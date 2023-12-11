@@ -49,7 +49,7 @@
             </script>
         </body>
 
-    </html>
+        </html>
 
     <script>
         document.getElementById('image').addEventListener('change', function() {
@@ -72,32 +72,5 @@
     </script>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<script>
-    $(document).ready(function() {
-        $('form').submit(function(e) {
-            e.preventDefault(); // Prevent the form from submitting traditionally
-
-            var formData = new FormData(this); // Create FormData object to send form data
-
-            $.ajax({
-                url: $(this).attr('action'), // Get the form action attribute for the URL
-                type: $(this).attr('method'), // Get the form method attribute (POST in this case)
-                data: formData,
-                processData: false,
-                contentType: false,
-                success: function(response) {
-                    // Handle success response here
-                    console.log(response);
-                    // Optionally, you can redirect to another page or perform any other action on success
-                },
-                error: function(xhr, status, error) {
-                    // Handle error response here
-                    console.error(xhr.responseText);
-                }
-            });
-        });
-    });
-</script>
 
 @endsection
